@@ -25,3 +25,28 @@ exercises.c:31:15: error: expected ‘;’ before ‘:’ token
       |               ;
 Compilation failed
 1cf3c88
+Fri 10 Mar 2023 12:15:00 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:30:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+   30 |     *max=*a[0];
+      |          ^~~~~
+exercises.c:31:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+   31 |     *min=*a[0];
+      |          ^~~~~
+exercises.c:34:11: error: invalid type argument of unary ‘*’ (have ‘int’)
+   34 |       if (*a[k]>*max)*max=*a[k];
+      |           ^~~~~
+exercises.c:34:27: error: invalid type argument of unary ‘*’ (have ‘int’)
+   34 |       if (*a[k]>*max)*max=*a[k];
+      |                           ^~~~~
+exercises.c:35:11: error: invalid type argument of unary ‘*’ (have ‘int’)
+   35 |       if (*a[k]<*min)*min=*a[k];
+      |           ^~~~~
+exercises.c:35:27: error: invalid type argument of unary ‘*’ (have ‘int’)
+   35 |       if (*a[k]<*min)*min=*a[k];
+      |                           ^~~~~
+Compilation failed
+978e300
