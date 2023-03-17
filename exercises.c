@@ -76,8 +76,10 @@ typedef struct {
 Vector * crearVector(int n) {
   Vector *vector = malloc(sizeof(Vector));
   if (vector==NULL)EXIT_FAILURE;
-   vector->datos = calloc(n,n * sizeof(int)); 
+  
+  vector->datos = calloc(n,n * sizeof(int)); 
   if (vector->datos==NULL)EXIT_FAILURE;
+  
    vector->capacidad = n;
    return vector;
 }
@@ -121,8 +123,9 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   vectorA=crearVector(2);
   vectorB=crearVector(2);
   asignarValor(vectorA,1,a1);
+  asignarValor(vectorA,2,a2)
+    
   asignarValor(vectorB,1,b1);
-  asignarValor(vectorA,2,a2);
   asignarValor(vectorB,2,b2);
 
   sumaV(vectorA,vectorB,c);

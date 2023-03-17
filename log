@@ -720,3 +720,17 @@ Fri 17 Mar 2023 11:48:25 AM UTC:
  tests:  7|1
 total_score: 60/70
 a120dcf
+Fri 17 Mar 2023 11:49:41 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:126:29: error: expected ‘;’ before ‘asignarValor’
+  126 |   asignarValor(vectorA,2,a2)
+      |                             ^
+      |                             ;
+  127 | 
+  128 |   asignarValor(vectorB,1,b1);
+      |   ~~~~~~~~~~~~               
+Compilation failed
+29b69f4
