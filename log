@@ -439,3 +439,21 @@ exercises.c:117:16: error: ‘vector’ undeclared (first use in this function);
 exercises.c:117:16: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c631b99
+Fri 17 Mar 2023 11:38:17 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:117:3: error: ‘vectorA’ undeclared (first use in this function); did you mean ‘Vector’?
+  117 |   vectorA=crearVector(2)
+      |   ^~~~~~~
+      |   Vector
+exercises.c:117:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:117:25: error: expected ‘;’ before ‘vectorB’
+  117 |   vectorA=crearVector(2)
+      |                         ^
+      |                         ;
+  118 |   vectorB=crearVector(2)
+      |   ~~~~~~~                
+Compilation failed
+dd116a3
