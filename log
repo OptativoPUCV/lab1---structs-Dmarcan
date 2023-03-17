@@ -255,3 +255,14 @@ Fri 17 Mar 2023 11:18:48 AM UTC:
  tests:  8|0
 total_score: 70/70
 8ff04c3
+Fri 17 Mar 2023 11:18:57 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:59:2: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   59 | p.edad = edad;
+      |  ^
+      |  ->
+Compilation failed
+5be5221
