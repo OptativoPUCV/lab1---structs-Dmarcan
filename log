@@ -156,3 +156,16 @@ Fri 17 Mar 2023 10:22:48 AM UTC:
  tests:  4|3
 total_score: 40/70
 51a6261
+Fri 17 Mar 2023 10:23:14 AM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:103:22: error: ‘Vector’ has no member named ‘tamano’
+  103 |   if (i >= 0 && i < v->tamano) {
+      |                      ^~
+exercises.c:104:17: error: ‘Vector’ has no member named ‘elementos’
+  104 |         return v->elementos[i];
+      |                 ^~
+Compilation failed
+a5b1ab3
