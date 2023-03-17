@@ -352,3 +352,29 @@ Fri 17 Mar 2023 11:27:19 AM UTC:
  tests:  8|0
 total_score: 70/70
 631cc74
+Fri 17 Mar 2023 11:29:37 AM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:117:7: error: expected ‘(’ before ‘size_t’
+  117 |   for size_t k=0;k<a->capacidad;k++
+      |       ^~~~~~
+      |       (
+exercises.c:117:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+  117 |   for size_t k=0;k<a->capacidad;k++
+      |   ^~~
+exercises.c:117:18: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  117 |   for size_t k=0;k<a->capacidad;k++
+      |                  ^
+exercises.c:117:18: error: ‘k’ undeclared (first use in this function)
+exercises.c:117:18: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:117:36: error: expected ‘;’ before ‘{’ token
+  117 |   for size_t k=0;k<a->capacidad;k++
+      |                                    ^
+      |                                    ;
+  118 |     {
+      |     ~                               
+cc1: all warnings being treated as errors
+Compilation failed
+7882316
