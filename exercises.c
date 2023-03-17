@@ -101,7 +101,7 @@ int obtenerValor(Vector * v, int i) {
         return v->datos[i];
     } 
 */
-   return 0;
+   //return 0;
 }
 
 /*
