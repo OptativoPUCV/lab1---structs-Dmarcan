@@ -118,7 +118,8 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   Vector *vectorB=NULL;
   vectorA=crearVector(2);
   vectorB=crearVector(2);
-  //asignarValor(vector,1,a1);
+  asignarValor(vectorA,1,a1);
+  asignarValor(vectorB,1,b1);
 
   
 }
