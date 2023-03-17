@@ -457,3 +457,23 @@ exercises.c:117:25: error: expected ‘;’ before ‘vectorB’
       |   ~~~~~~~                
 Compilation failed
 dd116a3
+Fri 17 Mar 2023 11:38:28 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:117:3: error: ‘vectorA’ undeclared (first use in this function); did you mean ‘Vector’?
+  117 |   vectorA=crearVector(2);
+      |   ^~~~~~~
+      |   Vector
+exercises.c:117:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:118:3: error: ‘vectorB’ undeclared (first use in this function); did you mean ‘Vector’?
+  118 |   vectorB=crearVector(2);
+      |   ^~~~~~~
+      |   Vector
+exercises.c:119:16: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+  119 |   asignarValor(vector,1,a1);
+      |                ^~~~~~
+      |                Vector
+Compilation failed
+ec43c66
