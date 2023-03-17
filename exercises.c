@@ -109,6 +109,14 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
+   if (a->tamano != b->tamano || b->tamano != c->tamano) {
+        printf("Error: los vectores no tienen el mismo tamaño\n");
+        exit(1);
+    }
+
+    for (int i = 0; i < a->tamano; i++) {
+        c->elementos[i] = a->elementos[i] + b->elementos[i];
+    }
 
 }
 
