@@ -114,7 +114,7 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-  /*
+  
   // Creamos dos vectores de tamaño 2
     Vector a = { (int*) malloc(2 * sizeof(int)), 2 };
     Vector b = { (int*) malloc(2 * sizeof(int)), 2 };
@@ -128,6 +128,6 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
 
     // Sumamos los vectores a y b y actualizamos el vector c
     sumaV(&a, &b, c);
-  */
+  
 
 }
