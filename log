@@ -686,3 +686,19 @@ exercises.c:125:8: error: variable ‘vectorC’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 4c8f6cd
+Fri 17 Mar 2023 11:45:34 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:128:26: error: passing argument 3 of ‘sumaV’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  128 |   sumaV(vectorA,vectorB, vectorC);
+      |                          ^~~~~~~
+      |                          |
+      |                          int *
+exercises.c:106:45: note: expected ‘Vector *’ but argument is of type ‘int *’
+  106 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                                    ~~~~~~~~~^
+cc1: all warnings being treated as errors
+Compilation failed
+a48eb97

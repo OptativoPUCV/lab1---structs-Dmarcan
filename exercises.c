@@ -123,7 +123,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   asignarValor(vectorA,2,a2);
   asignarValor(vectorB,2,b2);
   int *vectorC;
-  vectorC=(int *)malloc(2 * sizeof(int);
+  vectorC=(int *)malloc(2 * sizeof(int));
 
   sumaV(vectorA,vectorB, vectorC);
 
