@@ -318,3 +318,13 @@ Fri 17 Mar 2023 11:23:41 AM UTC:
  tests:  8|0
 total_score: 70/70
 ff19dea
+Fri 17 Mar 2023 11:24:32 AM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:89:3: error: invalid type argument of unary ‘*’ (have ‘int’)
+   89 |   *v->datos[i] = valor;
+      |   ^~~~~~~~~~~~
+Compilation failed
+46ac3c4
