@@ -408,3 +408,22 @@ Fri 17 Mar 2023 11:33:25 AM UTC:
  tests:  7|1
 total_score: 60/70
 56c1af1
+Fri 17 Mar 2023 11:35:29 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:117:16: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+  117 |   asignarValor(vector,1,a1)
+      |                ^~~~~~
+      |                Vector
+exercises.c:117:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:117:28: error: expected ‘;’ before ‘}’ token
+  117 |   asignarValor(vector,1,a1)
+      |                            ^
+      |                            ;
+......
+  120 | }
+      | ~                           
+Compilation failed
+d4b12bb
