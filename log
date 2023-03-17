@@ -128,3 +128,19 @@ exercises.c:118:46: error: ‘Vector’ has no member named ‘elementos’
       |                                              ^~
 Compilation failed
 5be29f0
+Fri 17 Mar 2023 10:21:33 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:118:10: error: ‘Vector’ has no member named ‘elementos’
+  118 |         c->elementos[i] = a->elementos[i] + b->elementos[i];
+      |          ^~
+exercises.c:118:28: error: ‘Vector’ has no member named ‘elementos’
+  118 |         c->elementos[i] = a->elementos[i] + b->elementos[i];
+      |                            ^~
+exercises.c:118:46: error: ‘Vector’ has no member named ‘elementos’
+  118 |         c->elementos[i] = a->elementos[i] + b->elementos[i];
+      |                                              ^~
+Compilation failed
+12ebc85
