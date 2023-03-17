@@ -125,7 +125,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   int *vectorC;
   vectorC=(int *)malloc(2 * sizeof(int);
 
-  sumaV(vectorA,vectorB, vectorC)
+  sumaV(vectorA,vectorB, vectorC);
 
   
 }
