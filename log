@@ -493,3 +493,23 @@ exercises.c:118:3: error: ‘vectorB’ undeclared (first use in this function);
       |   Vector
 Compilation failed
 61f9aaa
+Fri 17 Mar 2023 11:39:56 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:117:16: error: initialization of ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+  117 |   int *vectorA=crearVector(2);
+      |                ^~~~~~~~~~~
+exercises.c:118:16: error: initialization of ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+  118 |   int *vectorB=crearVector(2);
+      |                ^~~~~~~~~~~
+exercises.c:118:8: error: unused variable ‘vectorB’ [-Werror=unused-variable]
+  118 |   int *vectorB=crearVector(2);
+      |        ^~~~~~~
+exercises.c:117:8: error: unused variable ‘vectorA’ [-Werror=unused-variable]
+  117 |   int *vectorA=crearVector(2);
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+97bb372
