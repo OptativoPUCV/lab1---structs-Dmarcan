@@ -57,7 +57,6 @@ Persona * p = (Persona *) malloc(sizeof(Persona));
 strcpy(p->nombre, nombre);
 strcpy(p->rut, rut);
 p->edad = edad;
-
 return p;
 }
 
@@ -75,7 +74,6 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   Vector *vector = malloc(sizeof(Vector)); 
    vector->datos = malloc(n * sizeof(int)); 
    vector->capacidad = n;
    for (int i = 0; i < n; i++) {
