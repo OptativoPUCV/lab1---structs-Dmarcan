@@ -734,3 +734,9 @@ exercises.c:126:29: error: expected ‘;’ before ‘asignarValor’
       |   ~~~~~~~~~~~~               
 Compilation failed
 29b69f4
+Fri 17 Mar 2023 11:49:49 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 60/70
+cd29ad7
