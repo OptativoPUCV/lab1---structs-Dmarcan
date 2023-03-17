@@ -533,3 +533,23 @@ exercises.c:117:8: error: variable ‘vectorA’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 b808cb6
+Fri 17 Mar 2023 11:40:54 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:119:11: error: incompatible types when assigning to type ‘int *’ from type ‘Vector’
+  119 |   vectorA=*crearVector(2);
+      |           ^
+exercises.c:120:11: error: incompatible types when assigning to type ‘int *’ from type ‘Vector’
+  120 |   vectorB=*crearVector(2);
+      |           ^
+exercises.c:118:8: error: variable ‘vectorB’ set but not used [-Werror=unused-but-set-variable]
+  118 |   int *vectorB=NULL;
+      |        ^~~~~~~
+exercises.c:117:8: error: variable ‘vectorA’ set but not used [-Werror=unused-but-set-variable]
+  117 |   int *vectorA=NULL;
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d6ad958
