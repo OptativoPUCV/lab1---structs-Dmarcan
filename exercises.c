@@ -116,14 +116,18 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   Vector *vectorA=NULL;
   Vector *vectorB=NULL;
+  Vector *vectorC=NULL;
   vectorA=crearVector(2);
   vectorB=crearVector(2);
+  vectorC=crearVector(2);
   asignarValor(vectorA,1,a1);
   asignarValor(vectorB,1,b1);
   asignarValor(vectorA,2,a2);
   asignarValor(vectorB,2,b2);
+  /*
   int *vectorC;
   vectorC=(int *)malloc(2 * sizeof(int));
+  */
 
   sumaV(vectorA,vectorB, vectorC);
 
