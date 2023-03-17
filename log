@@ -200,3 +200,9 @@ exercises.c:139:11: error: ‘Vector’ has no member named ‘elementos’
       |           ^
 Compilation failed
 7ffe5b3
+Fri 17 Mar 2023 10:26:14 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  4|3
+total_score: 40/70
+c786f45

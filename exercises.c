@@ -135,7 +135,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
     sumaV(&a, &b, c);
 
     // Liberamos la memoria asignada para los vectores
-    free(a.elementos);
-    free(b.elementos);
+    free(a.datos);
+    free(b.datos);
 
 }
