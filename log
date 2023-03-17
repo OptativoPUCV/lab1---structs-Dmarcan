@@ -187,3 +187,16 @@ Fri 17 Mar 2023 10:24:57 AM UTC:
  tests:  4|3
 total_score: 40/70
 c699177
+Fri 17 Mar 2023 10:25:55 AM UTC: 
+ exercises.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:138:11: error: ‘Vector’ has no member named ‘elementos’
+  138 |     free(a.elementos);
+      |           ^
+exercises.c:139:11: error: ‘Vector’ has no member named ‘elementos’
+  139 |     free(b.elementos);
+      |           ^
+Compilation failed
+7ffe5b3
