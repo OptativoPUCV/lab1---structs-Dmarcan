@@ -427,3 +427,15 @@ exercises.c:117:28: error: expected ‘;’ before ‘}’ token
       | ~                           
 Compilation failed
 d4b12bb
+Fri 17 Mar 2023 11:35:38 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:117:16: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+  117 |   asignarValor(vector,1,a1);
+      |                ^~~~~~
+      |                Vector
+exercises.c:117:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c631b99
