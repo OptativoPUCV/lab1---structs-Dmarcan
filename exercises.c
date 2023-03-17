@@ -120,22 +120,6 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-  // Creamos dos vectores de tamaño 2
-    Vector a = { (int*) malloc(2 * sizeof(int)), 2 };
-    Vector b = { (int*) malloc(2 * sizeof(int)), 2 };
-
-    // Asignamos valores a las posiciones de los vectores
-    asignarValor(&a, 0, a1);
-    asignarValor(&a, 1, a2);
-
-    asignarValor(&b, 0, b1);
-    asignarValor(&b, 1, b2);
-
-    // Sumamos los vectores a y b y actualizamos el vector c
-    sumaV(&a, &b, c);
-
-    // Liberamos la memoria asignada para los vectores
-    free(a.datos);
-    free(b.datos);
+  
 
 }
